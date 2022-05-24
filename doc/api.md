@@ -26,7 +26,7 @@ Pour choisir plusieurs choix pour un champs sur une URL, `+` sera utilisé comme
 
 ## Requêtes
 
-`###` info_list: Liste les différents champs de donnée disponible
+### 'info_list': Liste les différents champs de donnée disponible
 
 #### Champs:
 Aucun
