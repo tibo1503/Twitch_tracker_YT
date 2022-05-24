@@ -2,12 +2,10 @@
 
 URL de base: <NOM_DE_DOMAINE>:<PORT>/api/
 
-## Requêtes
-
-### Base
+## Base
 Pour choisir plusieurs choix pour un champs sur une URL, `+` sera utilisé comme un séparateur.
 
-### Structures de donnée
+## Structures de donnée
 - field
 ```json
 "field": {
@@ -26,7 +24,9 @@ Pour choisir plusieurs choix pour un champs sur une URL, `+` sera utilisé comme
 }
 ```
 
-### info_list: Liste les différents champs de donnée disponible
+## Requêtes
+
+`###` info_list: Liste les différents champs de donnée disponible
 
 #### Champs:
 Aucun
@@ -40,7 +40,7 @@ Aucun
 ]
 ```
 
-### Streamer:    
+### `streamer`: Infos sur un streamer
 #### Champs:
 - obligatoires
     - Choix du streamer
@@ -57,7 +57,7 @@ Aucun
 }
 ```
 
-### streamers_list
+### `streamers_list`: Liste des streamers sous forme de liste
 #### Champs:
 - optionels
     - **info_filter**: Pour pouvoir entrer différent paramètres. Si ce dernier est abscent, toutes les informations sont envoyés
