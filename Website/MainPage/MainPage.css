@@ -1,3 +1,13 @@
+:root{
+    --Twitch-Purple: #9146FF;
+    --Twitch-Ice: #F0F0FF; 
+    --Gray-Scale-0: #0E0E10;
+    --Gray-Scale-1: #18181B;
+    --Gray-Scale-2: #494949;
+    --Gray-Scale-3: #555555;
+    --Text-Gray: #C4C4C4;
+}
+
 header{
     background-color: rgb(24, 24, 27);
     margin: -8px -8px 0px -8px;
@@ -8,11 +18,44 @@ header{
 
 #Logo{
     display: flex;
-
+    margin: 0.7%;
 }
 
 .SearchBar {
+    padding-left: 15%;
+    padding-right: 15%;
+    
+    width: 100%;
     display: flex;
     justify-content: center;
-    position: relative;
+    align-items: center;
+}
+
+.InputSearch::placeholder{
+    color : var(--Text-Gray);
+}
+
+.InputSearch{
+    outline: none;
+    width: 100%;
+    border-radius: 0.6rem ;
+    padding: 0.5rem 1rem ;
+    background-color: var(--Gray-Scale-2);
+    border-color: transparent;
+    color: var(--Twitch-Ice);
+    border-style: solid;
+    border-width: 3px;
+}
+
+.InputSearch:hover{
+    border-color: var(--Gray-Scale-3);
+}
+
+.InputSearch:focus, .InputSearch:active{
+    border-color: var(--Twitch-Purple);
+}
+
+.ButtonSearchBar{
+    background-color: transparent;
+    border-color: transparent;
 }
