@@ -8,7 +8,9 @@
     </head>
     <body>
         <header>
-            <img src="D:\IUT\Web\Twitch_Tracker\Twitch_tracker_YT\Maquette\Brand Assets\Logos\wordmark\Extruded Wordmark (Primary Logo)\Twitch Purple\TwitchExtrudedWordmarkPurple.svg" id="Logo" width="100px">
+            <a href="MainPage.html" class="HomePageLink">
+                <img src="D:\IUT\Web\Twitch_Tracker\Twitch_tracker_YT\Maquette\Brand Assets\Logos\wordmark\Extruded Wordmark (Primary Logo)\Twitch Purple\TwitchExtrudedWordmarkPurple.svg" id="Logo" width="100px">
+            </a>
             <div class="SearchBar">
 
                     <input type="search"  placeholder="Search & Compare" class="InputSearch">
@@ -25,17 +27,63 @@
             </div>
         </header>
         <main>
-            <div class = "AccèsComparateur">
+            <section class="GraphByYear Center">
+                <h1 class="Purple"> Nos classement pour cette année </h1>
+                <div class="GraphArea">
+                    <div id="arrow_2" class="arrow-wrapper">
+                        <div class="arrow arrow--left">
+                          <span>Prec</span>
+                        </div>
+                      
+                        <div class="GraphContainer">
+                            <h1 class="NomGraph">Le plus d'heure Stream</h1>
+                            <div class = Graph>
+
+                            </div>
+                        </div>
+                      
+                        <div class="arrow arrow--right">
+                          <span>Suiv</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="GraphByMouth Center">
+                <h1 class="Purple"> Nos classement par mois </h1>
+                <div class="GraphArea">
+                    <div id="arrow_2" class="arrow-wrapper">
+                        <div class="arrow arrow--left">
+                          <span>Prec</span>
+                        </div>
+                      
+                        <div class="GraphContainer">
+                            <h1 class="NomGraph">Le plus d'heure Stream</h1>
+                            <div class = Graph>
+                                
+                            </div>
+                        </div>
+                      
+                        <div class="arrow arrow--right">
+                          <span>Suiv</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class = "AccèsComparateur">
                 <div class = "TexteComparateur">
                     <h1 class="Purple Center">Consulter & comparer</h1>
                     <div class="Center">
                         <h2>les performance de vos <span class="Purple">streamers préferer</span></h2>
                     </div>
                 </div>
-                <button>
-                    <p class="Center">Accéder aux Comparateur</p>
-                </button>
-            </div>
+                <div class="ButtonContainer">
+                    <button>
+                        <p class="Center">Accéder aux Comparateur</p>
+                    </button>
+                </div>
+            </section>
         </main>
     </body>
 </html>

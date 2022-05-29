@@ -9,11 +9,13 @@
     --Text-Gray: #C4C4C4;
 
     --Arial-Bold: 700;
+    --Arial-Semi-Bold: 500;
     --Arial-Regular: 400;
 
     --Font-Size-0: 4.4rem;
-    --Font-Size-1: 3.4rem;
-    --Font-Size-2: 1.4rem;
+    --Font-Size-1: 4.0rem;
+    --Font-Size-2: 3.4rem;
+    --Font-Size-3: 1.4rem;
 
     color : var(--Twitch-Ice);
     font-family: Arial, Helvetica, sans-serif;
@@ -27,7 +29,7 @@ header{
     flex-wrap: nowrap;
 }
 
-#Logo{
+.HomePageLink{
     display: flex;
     margin: 0.7%;
 }
@@ -68,6 +70,8 @@ header{
 button{
     color : inherit;
     border: none;
+    padding-right: 30px;
+    padding-left: 30px;
     border-radius: 0.6rem ;
     background-color: var(--Gray-Scale-1)
 }
@@ -86,6 +90,7 @@ main{
     background-color: var(--Gray-Scale-0);
     margin-left: -8px;
     margin-right: -8px;
+    margin-bottom: -8px;
     flex-flow: column wrap;
 }
 
@@ -100,14 +105,17 @@ h1{
 
 h2{
     font-weight: var(--Arial-Regular);
-    font-size: var(--Font-Size-1);
+    font-size: var(--Font-Size-2);
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
 p{
     font-weight: var(--Arial-Regular);
-    font-size: var(--Font-Size-2);
+    font-size: var(3);
+    margin-top: 10px;
+    margin-bottom: 10px;
+
 }
 
 .Purple{
@@ -124,4 +132,101 @@ p{
     flex-flow: column wrap;
 }
 
+.ButtonContainer{
+    display: flex;
+    justify-content: center;
 
+}
+
+section{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.GraphArea{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.GraphContainer{
+    border-radius: 0.6rem ;
+    background-color: var(--Twitch-Ice);
+    width: 85vw;
+    height: 45rem;
+    margin-right: 10px;
+    margin-left: 10px;
+    justify-content: center;
+
+}
+
+.NomGraph{
+    margin-top: 15px;
+    color: var(--Gray-Scale-0);
+    font-weight: var(--Arial-Semi-Bold);
+    font-size: var(--Font-Size-1)
+}
+
+/*
+Section pour les flèches de navigation
+*/
+
+.arrow-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+#arrow_2 .arrow {
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    align-items: flex-start;
+    text-transform: uppercase;
+    position: relative;
+    transition: transform 0.3s;
+}
+#arrow_2 .arrow span {
+    display: block;
+    width: 3em;
+    opacity: 0;
+    transition: opacity 0.3s 0s;
+    padding: 0 0.5em;
+}
+#arrow_2 .arrow:hover span {
+    opacity: 1;
+    transition: opacity 0.3s 0.1s;
+}
+#arrow_2 .arrow:before {
+    content: '';
+    display: block;
+    border: solid #fff;
+    border-width: 2px 2px 0 0;
+    position: absolute;
+    top: 4px;
+    width: 10px;
+    height: 10px;
+}
+#arrow_2 .arrow.arrow--left:before {
+    transform: rotate(-135deg);
+    right: 0;
+    transition: right 0.3s 0.2s;
+}
+#arrow_2 .arrow.arrow--left:hover:before {
+    right: 100%;
+    transition: right 0.3s;
+}
+#arrow_2 .arrow.arrow--right {
+    text-align: right;
+}
+#arrow_2 .arrow.arrow--right:before {
+    left: 0;
+    transform: rotate(45deg);
+    transition: left 0.3s 0.2s;
+}
+#arrow_2 .arrow.arrow--right:hover:before {
+    left: 100%;
+    transition: left 0.3s;
+}
+#arrow_2 .arrow:hover {
+    transform: none;
+}
