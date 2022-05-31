@@ -21,11 +21,6 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-main{
-    padding-right: 86px;
-    padding-left: 86px;
-}
-
 header{
     background-color: rgb(24, 24, 27);
     margin: -8px -8px 0px -8px;
@@ -99,6 +94,8 @@ button:hover{
 }
 
 main{
+    padding-right: 86px;
+    padding-left: 86px;
     display: flex;
     background-color: var(--Gray-Scale-0);
     margin-left: -8px;
