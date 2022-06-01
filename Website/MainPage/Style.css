@@ -172,7 +172,36 @@ section{
     margin-top: 15px;
     color: var(--Gray-Scale-0);
     font-weight: var(--Arial-Semi-Bold);
-    font-size: var(--Font-Size-1)
+    font-size: var(--Font-Size-1);
+}
+
+.CompareBlock{
+    display: flex;
+    flex-flow: column wrap;
+
+
+    border-radius: 0.6rem ;
+    background-color: var(--Gray-Scale-1);
+    padding-top: 2.5vw;
+    height: 45rem;
+}
+
+.ComparateurImageWrapper{
+    text-align: center;
+}
+
+.ImageStreamerComparateur{
+    transition: all .2s ease-in-out;
+}
+
+.ImageStreamerComparateur:hover{
+    transform: scale(1.1);
+}
+
+.HorizontalStat{
+    justify-content: space-around;
+    display: flex;
+    flex-flow: row nowrap;
 }
 
 /*
