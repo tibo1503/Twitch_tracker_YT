@@ -1,0 +1,25 @@
+version: "3.2"
+services:
+  web:
+    image: php:8.1-apache-buster
+    volumes:
+      - ./php/src:/var/www/html/
+    ports:
+      - "80:80"
+
+  db:
+    image: mariadb
+    volumes:
+      - ./db:/var/lib/mysql
+    environment:
+      MARIADB_ROOT_PASSWORD: "azertyahah"
+      PMA_HOST: "db"
+
+  pma: 
+    image: phpmyadmin
+    ports:
+      - 8080:80
+    environment:
+      - MYSQL_ROOT_PASSWORD=azertyahah
+      - PMA_USER=root
+      - PMA_PASSWORD=azertyahah      
