@@ -14,3 +14,4 @@ while ( $rows = $result->fetch_assoc() ) {
     //echo "<br>";
     $all_fields[] = $rows["column_name"];
 }
+?>
