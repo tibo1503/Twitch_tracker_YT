@@ -179,13 +179,13 @@ section{
     display: flex;
     flex-flow: column nowrap;
 
-
     border-radius: 0.6rem ;
     background-color: var(--Gray-Scale-1);
     padding-top: 2.5vw;
     padding-bottom: 2.5vw;
     padding-left: 4vw;
     padding-right: 4vw;
+    min-height: 25vw;
     height: auto;
 }
 
@@ -219,6 +219,13 @@ section{
     display: flex;
     justify-content: space-between;
     flex-flow: row wrap;
+}
+
+.DefaultComparatorContent:before{
+    color: #fff;
+    display: block;
+    border: solid #fff;
+    border-width: 2px 2px 0 0;
 }
 
 /*
@@ -260,27 +267,33 @@ Section pour les flèches de navigation
     width: 20px;
     height: 20px;
 }
+
 #arrow_2 .arrow.arrow--left:before {
     transform: rotate(-135deg);
     right: 0;
     transition: right 0.3s 0.2s;
 }
+
 #arrow_2 .arrow.arrow--left:hover:before {
     right: 100%;
     transition: right 0.3s;
 }
+
 #arrow_2 .arrow.arrow--right {
     text-align: right;
 }
+
 #arrow_2 .arrow.arrow--right:before {
     left: 0;
     transform: rotate(45deg);
     transition: left 0.3s 0.2s;
 }
+
 #arrow_2 .arrow.arrow--right:hover:before {
     left: 100%;
     transition: left 0.3s;
 }
+
 #arrow_2 .arrow:hover {
     transform: none;
 }
