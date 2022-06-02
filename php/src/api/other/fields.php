@@ -7,12 +7,10 @@ WHERE (TABLE_NAME = N'streamers-stats') AND COLUMN_NAME NOT IN (\"id\",\"date\",
 ;";
 $result = $conn->query($sql);
 
-$array_before_json = array();
+$all_fields = array();
 
 while ( $rows = $result->fetch_assoc() ) {
     //print_r($rows["column_name"]);//echo "{$row['field']}";
     //echo "<br>";
-    $array_before_json[] = $rows["column_name"];
+    $all_fields[] = $rows["column_name"];
 }
-
-$json_fields = json_encode($array_before_json);

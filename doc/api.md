@@ -40,9 +40,9 @@ Aucun
 ### `streamer`: Infos sur un streamer
 #### Champs:
 - obligatoires
-    - Choix du streamer
-        - **by_id**: Par l'ID du streamer sur la base de donnée
-        - **by_pseudo**: Par le pseudo du streamer
+    - Choix des streamers (`by`). Erreur 501 (Not Implemented) envoyer si utilisation de plus d'un choix.
+        - **id**: Par l'ID du streamer sur la base de donnée
+        - **pseudo**: Par le pseudo du streamer
 - optionels
     - **info_filter**: Pour pouvoir entrer différent paramètres. Si ce dernier est abscent, toutes les informations sont envoyés
 
@@ -53,14 +53,14 @@ Aucun
 }
 ```
 
-### `streamers_list`: Liste des streamers sous forme de liste
+### `streamers_list`: Liste des streamers
 #### Champs:
 - optionels
     - **info_filter**: Pour pouvoir entrer différent paramètres. Si ce dernier est abscent, toutes les informations sont envoyés
     - Choix des streamers:
         - Options:
             - **mode**: Possiblité de choisir entre "whitelist" ou "blacklist"
-        - Choix des streamers (1 paramètre possible seulement). Erreur 501 (Not Implemented) envoyer si utilisation de plus d'un choix.
+        - Choix des streamers (`by`). Erreur 501 (Not Implemented) envoyer si utilisation de plus d'un choix.
             - **by_id**: Par l'ID du streamer sur la base de donnée
             - **by_pseudo**: Par le pseudo du streamer
             - **at_time**: Pour les donnée de la date de ...
