@@ -1,13 +1,13 @@
 <?php
 include './other/bd_connection.php';
 
-$sql = `SELECT name, logo FROM 'streamers' `;
+$sql = 'SELECT name, logo FROM `streamers`';
 
 
 if (isset($_GET["sub_name"])) {
     $sql .= `WHERE name LIKE "%` . $_GET["sub_name"] . `%";`;
 } else {
-    $sql .= ` LIMIT 0`;
+    $sql .= ` LIMIT 1`;
 }
 
 $result = $conn->query($sql);
