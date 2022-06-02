@@ -177,13 +177,16 @@ section{
 
 .CompareBlock{
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column nowrap;
 
 
     border-radius: 0.6rem ;
     background-color: var(--Gray-Scale-1);
     padding-top: 2.5vw;
-    height: 45rem;
+    padding-bottom: 2.5vw;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    height: auto;
 }
 
 .ComparateurImageWrapper{
@@ -191,17 +194,31 @@ section{
 }
 
 .ImageStreamerComparateur{
+    width: 50vw;
     transition: all .2s ease-in-out;
 }
 
 .ImageStreamerComparateur:hover{
-    transform: scale(1.1);
+    transform: scale(1.03);
 }
 
 .HorizontalStat{
-    justify-content: space-around;
+
+    justify-content: space-between;
     display: flex;
     flex-flow: row nowrap;
+}
+
+.VerticalStat{
+    text-align: center;
+    display: flex;
+    flex-flow: column-reverse wrap;
+}
+
+.WrapperVerticalStat{
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
 }
 
 /*
