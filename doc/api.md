@@ -8,10 +8,7 @@ Pour choisir plusieurs choix pour un champs sur une URL, `+` sera utilisé comme
 ## Structures de donnée
 - field
 ```json
-"field": {
-            "name": <NOM DU CHAMP>,
-            "id": <ID DU CHAMP>
-        }
+"field": <NOM DU CHAMP>
 ```
 
 - streamer
@@ -52,8 +49,7 @@ Aucun
 #### Réponse: Json
 ```json
 {
-    "data_field": [ <Liste des données disponibles> ],
-    "streamer": <STRUCTURE>
+    "data_field": [ <Liste des données disponibles> ]
 }
 ```
 

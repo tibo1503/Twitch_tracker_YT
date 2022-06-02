@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="Style.css">
+        <link rel="icon" type="image/png" href="asset/Logo/Icon.png">
+        <title>TwitchTracker</title>
+    </head>
+    <body>
+        <header>
+            <a href="MainPage.html" class="HomePageLink">
+                <img src="asset\Logo\Logo_TwitchTracker_horizontal.png" id="Logo" width="185px">
+            </a>
+            <div class="SearchBar">
+                    <input type="search"  placeholder="Search & Compare" class="InputSearch">
+                    <button class="ButtonSearchBar">
+                        <script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
+                        <lord-icon
+                            src="https://cdn.lordicon.com/pvbutfdk.json"
+                            trigger="hover"
+                            colors="primary:#ffffff"
+                            style="width:25px;height:25px">
+                        </lord-icon>
+                    </button>
+            </div>
+        </header>
+        <main>
+            <section class="GraphByYear Center">
+                <h1 class="Purple"> Nos classement pour cette année </h1>
+                <div class="GraphArea">
+                    <div id="arrow_2" class="arrow-wrapper">
+                        <div class="arrow arrow--left">
+                          <span>Prec</span>
+                        </div>
+                      
+                        <div class="GraphContainer">
+                            <h1 class="NomGraph">Le plus d'heure Stream</h1>
+                            <div class = Graph>
+
+                            </div>
+                        </div>
+                      
+                        <div class="arrow arrow--right">
+                          <span>Suiv</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="GraphByMouth Center">
+                <h1 class="Purple"> Nos classement par mois </h1>
+                <div class="GraphArea">
+                    <div id="arrow_2" class="arrow-wrapper">
+                        <div class="arrow arrow--left">
+                          <span>Prec</span>
+                        </div>
+                      
+                        <div class="GraphContainer">
+                            <h1 class="NomGraph">Le plus d'heure Stream</h1>
+                            <div class = Graph>
+                                
+                            </div>
+                        </div>
+                      
+                        <div class="arrow arrow--right">
+                          <span>Suiv</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class = "AccèsComparateur">
+                <div class = "TexteComparateur">
+                    <h1 class="Purple Center">Consulter & comparer</h1>
+                    <div class="Center">
+                        <h2>les performance de vos <span class="Purple">streamers préferer</span></h2>
+                    </div>
+                </div>
+                <div class="ButtonContainer">
+                    <form action="ComparatorPage.html">
+                        <button type="submit" value="GoToComparator">
+                            <p class="Center">Accéder aux Comparateur</p>
+                        </button>
+                    </form>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>

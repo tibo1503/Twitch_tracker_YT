@@ -1,0 +1,243 @@
+:root{
+    --Twitch-Purple: #9146FF;
+    --Twitch-Ice: #F0F0FF; 
+    --Gray-Scale-0: #0E0E10;
+    --Gray-Scale-1: #18181B;
+    --Gray-Scale-2: #242427;
+    --Gray-Scale-3: #494949;
+    --Gray-Scale-4: #555555;
+    --Text-Gray: #C4C4C4;
+
+    --Arial-Bold: 700;
+    --Arial-Semi-Bold: 500;
+    --Arial-Regular: 400;
+
+    --Font-Size-0: 3.8vw;
+    --Font-Size-1: 3.3vw;
+    --Font-Size-2: 2.8vw;
+    --Font-Size-3: 1.4vw;
+
+    color : var(--Twitch-Ice);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main{
+    padding-right: 86px;
+    padding-left: 86px;
+}
+
+header{
+    background-color: rgb(24, 24, 27);
+    margin: -8px -8px 0px -8px;
+    display: flex;
+    align-items: stretch;
+    flex-wrap: nowrap;
+}
+
+.HomePageLink{
+    display: flex;
+    margin: 0.7%;
+}
+
+.SearchBar {
+    padding-left: 15%;
+    padding-right: 15%;
+    
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.InputSearch::placeholder{
+    color : var(--Text-Gray);
+}
+
+.InputSearch{
+    font-family: inherit;
+    outline: none;
+    appearance: none;
+    width: 100%;
+    border-radius: 0.6rem ;
+    padding: 0.5rem 1rem ;
+    background-color: var(--Gray-Scale-3);
+    border-color: transparent;
+    border-style: solid;
+    border-width: 3px;
+    font-weight: 500;
+    color:#F0F0FF;
+}
+
+.InputSearch::-webkit-search-cancel-button{
+    display: none;
+}
+
+.InputSearch:hover{
+    border-color: var(--Gray-Scale-4);
+}
+
+.InputSearch:focus, .InputSearch:active{
+    border-color: var(--Twitch-Purple);
+}
+
+button{
+    color : inherit;
+    border: none;
+    padding-right: 30px;
+    padding-left: 30px;
+    border-radius: 0.6rem ;
+    background-color: var(--Gray-Scale-1)
+}
+
+button:hover{
+    background-color: var(--Gray-Scale-2)
+}
+
+.ButtonSearchBar{
+    background-color: transparent;
+    border-color: transparent;
+}
+
+main{
+    display: flex;
+    background-color: var(--Gray-Scale-0);
+    margin-left: -8px;
+    margin-right: -8px;
+    margin-bottom: -8px;
+    flex-flow: column wrap;
+}
+
+h1{
+    font-weight: var(--Arial-Bold);
+    font-size: var(--Font-Size-0);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+h2{
+    font-weight: var(--Arial-Regular);
+    font-size: var(--Font-Size-2);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+p{
+    font-weight: var(--Arial-Regular);
+    font-size: var(3);
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+.Purple{
+    color: var(--Twitch-Purple);
+}
+
+.Center{
+    text-align: center;
+}
+
+.AccèsComparateur{
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
+}
+
+.ButtonContainer{
+    display: flex;
+    justify-content: center;
+
+}
+
+section{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.GraphArea{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.GraphContainer{
+    border-radius: 0.6rem ;
+    background-color: var(--Twitch-Ice);
+    width: 80vw;
+    height: 45rem;
+    margin-right: 10px;
+    margin-left: 10px;
+    justify-content: center;
+
+}
+
+.NomGraph{
+    margin-top: 15px;
+    color: var(--Gray-Scale-0);
+    font-weight: var(--Arial-Semi-Bold);
+    font-size: var(--Font-Size-1)
+}
+
+/*
+Section pour les flèches de navigation
+*/
+
+.arrow-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+#arrow_2 .arrow {
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    align-items: flex-start;
+    text-transform: uppercase;
+    position: relative;
+    transition: transform 0.3s;
+}
+#arrow_2 .arrow span {
+    display: block;
+    width: 3em;
+    opacity: 0;
+    transition: opacity 0.3s 0s;
+    padding: 0 0.5em;
+}
+#arrow_2 .arrow:hover span {
+    opacity: 1;
+    transition: opacity 0.3s 0.1s;
+}
+#arrow_2 .arrow:before {
+    content: '';
+    display: block;
+    border: solid #fff;
+    border-width: 2px 2px 0 0;
+    position: absolute;
+    top: -3px;
+    width: 20px;
+    height: 20px;
+}
+#arrow_2 .arrow.arrow--left:before {
+    transform: rotate(-135deg);
+    right: 0;
+    transition: right 0.3s 0.2s;
+}
+#arrow_2 .arrow.arrow--left:hover:before {
+    right: 100%;
+    transition: right 0.3s;
+}
+#arrow_2 .arrow.arrow--right {
+    text-align: right;
+}
+#arrow_2 .arrow.arrow--right:before {
+    left: 0;
+    transform: rotate(45deg);
+    transition: left 0.3s 0.2s;
+}
+#arrow_2 .arrow.arrow--right:hover:before {
+    left: 100%;
+    transition: left 0.3s;
+}
+#arrow_2 .arrow:hover {
+    transform: none;
+}
